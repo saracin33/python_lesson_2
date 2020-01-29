@@ -24,9 +24,8 @@
 '''
 # sum = 0
 #
-# i = input('Введите 10 цифр')
-# i = int(i)
 # for i in range(10):
+#     i = int(input('Введите 10 цифр'))
 #     if i == 5:
 #         sum+=1
 # print(sum)
@@ -70,17 +69,15 @@
 Задача 6
 Найти сумму цифр числа.
 '''
-# integer_number = 12345621
-#
-# a = integer_number%10
+# integer_number = 1234562151
 #
 # sum = 0
 #
 # while integer_number>0:
+#     sum += integer_number%10
 #     integer_number = integer_number//10
-#     sum+=integer_number%10
 #
-# print(sum + a)
+# print(sum)
 
 '''
 Задача 7
@@ -88,15 +85,13 @@
 '''
 # integer_number = 1234567
 #
-# a = integer_number%10
-#
 # mult = 1
 #
 # while integer_number>0:
+#     mult *= integer_number%10
 #     integer_number = integer_number//10
-#     mult*=integer_number%10
 #
-# print(mult * a)
+# print(mult)
 
 '''
 Задача 8
@@ -114,14 +109,21 @@
 Задача 9
 Найти максимальную цифру в числе
 '''
-
+# number = 2485765567638
+# max_=0
+# while number>0:
+#     digit=number%10
+#     if digit>max_:
+#         max_ =digit
+#     number=number // 10
+# print('Максимальное число:',max_)
 
 '''
 Задача 10
 Найти количество цифр 5 в числе
 '''
-# integer_number = 563513559555
-# sum: int = 0
+# integer_number = 5635135595575
+# sum = 0
 # while integer_number>0:
 #     if integer_number%10 == 5:
 #         sum+=1
